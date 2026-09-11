@@ -9,8 +9,8 @@
 4. Execute the setup script: `.\Setup.ps1`
 ## Configuration
 1. Open config.conf on your text editor.
-2. Change the input_filepath to the folder that stores the Excel files to be processed.
-3. Change the output_filepath to the folder that stores the destination data.
+2. Change the input_filepath value into the path of the folder that stores the Excel files to be processed.
+3. Change the output_filepath value into the path of the folder that stores the destination data.
 ## Validation
 1. Make sure every Excel file name to be processed follows this format: Jira_[ddMMyy]_[hhmm]
 ## Run the Script
