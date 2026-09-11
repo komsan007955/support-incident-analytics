@@ -4,8 +4,8 @@ import configparser
 
 conf = configparser.ConfigParser()
 conf.read("./config.conf")
-input_filepath = conf["datasource"]["input_filepath"]
-output_filepath = conf["datasource"]["output_filepath"]
+input_filepath = os.path.join(*conf["datasource"]["input_filepath"].split("\\"))
+output_filepath = os.path.join(*conf["datasource"]["output_filepath"].split("\\"))
 
 tiers = ["(Tier 0)", "(Tier 1-2)", "(Tier 1-2).1", "(Tier 1-2).2", "(Tier 3)", "(Tier 3).1"]
 cols_tier = ["Custom field " + c for c in tiers]
